@@ -3,17 +3,17 @@ using namespace std;
 
 const int MAX = 100;
 
-class SparseMatrix {
+class SparseMatris {
     int row, col, num;
     int data[MAX][3];
 public:
-    SparseMatrix(int r, int c, int n) {
+    SparseMatris(int r, int c, int n) {
         row = r;
         col = c;
         num = n;
     }
     void read() {
-        cout << "Enter the elements of the matrix:\n";
+        cout << "Enter the elements of the matris:\n";
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 int x;
@@ -28,7 +28,7 @@ public:
         }
     }
     void display() {
-        cout << "Sparse Matrix:\n";
+        cout << "Sparse Matris:\n";
         for (int i = 0; i < num; i++) {
             cout << data[i][0] << " " << data[i][1] << " " << data[i][2] << endl;
         }
@@ -37,9 +37,9 @@ public:
 
 int main() {
     int n;
-    cout << "Enter the size of the matrix: ";
+    cout << "Enter the size of the matris: ";
     cin >> n;
-    SparseMatrix s(n, n, 0);
+    SparseMatris s(n, n, 0);
     s.read();
     s.display();
     return 0;
