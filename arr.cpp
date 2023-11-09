@@ -2,7 +2,7 @@
 #include<math.h>
 using namespace std;
 
-void insert(int a[] , int m , int k , int x)
+void insert(int a[] , int m , int k , int x)        //تعداد شیفت مورد نظر : m-k
 {
     for(int i=m-1 ; i>=k ; i--)
         a[i+1]=a[i];
