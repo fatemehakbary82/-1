@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int com(int n , int r)
+int tarkib(int n , int r)
 {
     if (r==0 || r==n)
         return 1;
     else
-        return com(n-1 , r-1)+com(n-1 , r);
+        return tarkib(n-1 , r-1)+tarkib(n-1 , r);
 
 }
 
@@ -24,7 +24,7 @@ int main()
     }
 else
 {
-    cout<<"com c("<<n<<","<<r<<")="<<com(n,r)<<endl;
+    cout<<"tarkib c("<<n<<","<<r<<")="<<tarkib(n,r)<<endl;
 }
 
 return 0;
