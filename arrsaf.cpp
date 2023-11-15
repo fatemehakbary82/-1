@@ -32,7 +32,7 @@ public:
     // متد اضافه کردن به صف
     void enqueue(int item) {
         if (isFull()) {
-            std::cout << "صف پر است." <<endl;
+            cout << "صف پر است." <<endl;
             return;
         }
 
