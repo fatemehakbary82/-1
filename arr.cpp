@@ -18,7 +18,7 @@ void delete(int a[] , int n , int k , int x)
     return(x);
 }
 
-int find(int a[] , int n , int x) //n=سایز
+int find(int a[] , int n , int x)     //n=سایز
 {
     for(int i=0 ; i<n ; i++)
     {
