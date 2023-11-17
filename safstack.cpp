@@ -9,20 +9,20 @@ struct Queue {
 	// Enqueue an item to the queue
     	void enqueue(int x)
 	{
-		stack.push(x);
+		stack.push(x);   // X به بشته اضافه شد
 	}
 
     // Dequeue an item from the queue
 	int dequeue()
 	{
 		if (stack.empty()) {
-			cout << "Queue is empty" << endl;;
+			cout << "Queue is empty" << endl;  //پشته خالی است
 			exit(0);
 		}
 
 		// pop an item from the stack
 		int x = stack.top();
-		stack.pop();
+		stack.pop();    //pop حذف کردن عنصر
 
 		// if stack becomes empty, return
 		// the popped item
@@ -30,7 +30,7 @@ struct Queue {
 			return x;
 
 		// recursive call
-		int ret = dequeue();
+		int ret = dequeue();     //ret رابطه بازگشتی
 
 		// push popped item back to the stack
 		stack.push(x);
