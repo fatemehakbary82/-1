@@ -13,6 +13,7 @@ class Stack
    bool push(int x);
    int pop();
    bool isEmpty();
+   bool isFull(); 
 };
    //pushes element on to the stack
    bool Stack::push(int item)
@@ -46,3 +47,20 @@ bool Stack::isEmpty()
 {
    return (top < 0);
 }
+
+bool Stack::isFull()
+{
+   return (top == MAX- 1);
+}
+
+   int peek() {
+        if (isEmpty()) {
+            cout << "Stack is empty." <<endl;
+            return -1;
+        }
+        return stack[top];
+    }
+
+    int size() {
+        return top + 1;
+    }
