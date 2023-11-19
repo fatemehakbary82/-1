@@ -14,6 +14,7 @@ class Stack
    int pop();
    bool isEmpty();
    bool isFull(); 
+   int peek();
 };
    //pushes element on to the stack
    bool Stack::push(int item)
