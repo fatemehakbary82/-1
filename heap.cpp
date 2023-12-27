@@ -60,7 +60,7 @@ public:
             cout << "Heap is empty." << endl;
             return INT_MAX;
         }
-
+     
         return heapArray[0];
     }
 };
