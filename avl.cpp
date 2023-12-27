@@ -10,12 +10,6 @@ struct Node
     int height; // ارتفاع گره
 };
 
-// تابع برای محاسبه حداکثر دو عدد
-int max(int a, int b) 
-{
-    return (a > b) ? a : b;
-}
-
 // تابع برای محاسبه ارتفاع گره
 int getHeight(Node* node) 
 {
@@ -118,13 +112,8 @@ Node* insertNode(Node* root, int data)
     return root;
 }
 
-// تابع برای نمایش درخت به صورت Inorder
-void inorderTraversal(Node* root) 
+Node* remove(Node* root, int data) 
 {
-    if (root != nullptr)
-    {
-        inorderTraversal(root->left);
-        cout << root->data << " ";
-        inorderTraversal(root->right);
-    }
+    // Implementation of remove method
+    return root;
 }
