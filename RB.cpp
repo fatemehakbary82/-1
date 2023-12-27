@@ -27,39 +27,6 @@ private:
         node->color = 0;
     }
 
-    // Preorder
-    void preOrderHelper(NodePtr node)
-    {
-        if (node != TNULL)
-        {
-            cout  node->data  " ";
-            preOrderHelper(node->left);
-            preOrderHelper(node->right);
-        }
-    }
-
-    // Inorder
-    void inOrderHelper(NodePtr node)
-    {
-        if (node != TNULL)
-        {
-            inOrderHelper(node->left);
-            cout  node->data  " ";
-            inOrderHelper(node->right);
-        }
-    }
-
-    // Post order
-    void postOrderHelper(NodePtr node)
-    {
-        if (node != TNULL)
-        {
-            postOrderHelper(node->left);
-            postOrderHelper(node->right);
-            cout  node->data  " ";
-        }
-    }
-
     // For balancing the tree after deletion
     void deleteFix(NodePtr x)
     {
@@ -202,24 +169,6 @@ public:
         TNULL->left = nullptr;
         TNULL->right = nullptr;
         root = TNULL;
-    }
-
-    void preorder()
-    {
-        preOrderHelper(this->root);
-    }
-
-    void inorder()
-    {
-        inOrderHelper(this->root);
-    }
-
-    void postorder()
-    {
-        postOrderHelper(this->root);
-    }
-
-        x->parent = y;
     }
 
     // Inserting a node
